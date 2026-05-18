@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(242,201,76,0.05)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(242,201,76,0.05)"/[...]
     background-size: cover;
     background-attachment: fixed;
 }
@@ -173,6 +173,46 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #e0b83a;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(242, 201, 76, 0.4);
+}
+
+/* ===== HISTORIA SECTION ===== */
+.historia {
+    padding: 100px 20px;
+    background-color: var(--white);
+}
+
+.historia h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.historia-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.historia-box {
+    background-color: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--secondary-color);
+    max-width: 800px;
+    width: 100%;
+}
+
+.historia-box p {
+    color: var(--gray-color);
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.historia-box p:last-child {
+    margin-bottom: 0;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -690,7 +730,8 @@ h1, h2, h3, h4, h5, h6 {
     .clients h2,
     .process h2,
     .contact h2,
-    .values h2 {
+    .values h2,
+    .historia h2 {
         font-size: 2rem;
     }
 
@@ -727,6 +768,10 @@ h1, h2, h3, h4, h5, h6 {
         padding: 100px 20px;
         min-height: 500px;
     }
+
+    .historia-box {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -747,7 +792,8 @@ h1, h2, h3, h4, h5, h6 {
     .clients h2,
     .process h2,
     .contact h2,
-    .values h2 {
+    .values h2,
+    .historia h2 {
         font-size: 1.5rem;
     }
 
